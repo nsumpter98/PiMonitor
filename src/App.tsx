@@ -17,36 +17,33 @@ function App() {
       </header>
 
       {/* Main Content Area */}
-      <div className="flex h-[calc(100vh-64px)]">
-        {/* Main Dashboard Content */}
-        <main className="flex-1 p-6 overflow-auto">
-          <div className="grid grid-cols-2 gap-6 mb-6 h-full">
-            {/* Stats Cards */}
-            <Card title="Statistics">
-              <div className="text-3xl font-bold">1,234</div>
-            </Card>
+      <main className="p-6 flex flex-col gap-6">
+        {/* Stats Cards */}
+        <div className="flex gap-6">
+          <Card title="Statistics" className="flex-1">
+            <div className="text-3xl font-bold">1,234</div>
+          </Card>
 
-            <Card title="Revenue">
-              <div className="text-3xl font-bold">$5,678</div>
-            </Card>
-          </div>
+          <Card title="Revenue" className="flex-1">
+            <div className="text-3xl font-bold">$5,678</div>
+          </Card>
+        </div>
 
-          {/* Charts Section */}
-          <div className="grid grid-cols-3 gap-6 h-full">
-            <Card title="Analytics Chart" className="col-span-2">
-              <div className="h-64 bg-gray-700 rounded"></div>
-            </Card>
+        {/* Charts Section */}
+        <div className="flex gap-6">
+          <Card title="Analytics Chart" className="flex-1">
+            <div className="h-64 bg-gray-700 rounded"></div>
+          </Card>
 
-            <Card title="Recent Activity">
-              <div className="space-y-4">
-                <div className="border-b border-gray-700 pb-2">Activity 1</div>
-                <div className="border-b border-gray-700 pb-2">Activity 2</div>
-                <div className="border-b border-gray-700 pb-2">Activity 3</div>
-              </div>
-            </Card>
-          </div>
-        </main>
-      </div>
+          <Card title="Recent Activity" className="w-1/3">
+            <div className="space-y-4">
+              <div className="border-b border-gray-700 pb-2">Activity 1</div>
+              <div className="border-b border-gray-700 pb-2">Activity 2</div>
+              <div className="border-b border-gray-700 pb-2">Activity 3</div>
+            </div>
+          </Card>
+        </div>
+      </main>
     </div>
   );
 }
