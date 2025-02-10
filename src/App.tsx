@@ -1,5 +1,4 @@
 import raspberryLogo from "./assets/raspberry.svg";
-import Card from "./components/Card";
 import TimeCardStats from "./components/TimeCardStats";
 import GithubActivity from "./components/GithubActivity";
 import LiveComments from "./components/LiveComments";

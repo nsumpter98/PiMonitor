@@ -1,7 +1,16 @@
 # Pi Monitor Dashboard
 
-A modern, real-time dashboard built with React and TypeScript to monitor personal productivity metrics and development activity.
+A modern, real-time dashboard built with React and TypeScript to monitor development activity, and generate daily memes with inspirational quotes.
 
+
+Carefully crafted to fit beautifully on a Dell E178FPc with a stunning 1280 X 1024 resolution. This dashboard is sure to knock the socks off even the most sleep-deprived developer at 3am debugging sessions. Perfect for those moments when you're running on nothing but coffee fumes and sheer determination to find that one missing semicolon. 
+
+Have you ever thought to yourself, "Hey... I wish there was a dashboard out there that generated hilarious memes with inspirational quotes and had a live comments section where strangers on the internet could send me messages to be displayed in my office... and oh yeah, ALSO showed stats from my GitHub and timecard?"... Well, hold on to your hats because I have created just that.
+
+
+
+
+ 
 ![Dashboard Demo](./demo.png)
 
 ## Features
