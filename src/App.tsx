@@ -1,5 +1,9 @@
 import raspberryLogo from "./assets/raspberry.svg";
 import Card from "./components/Card";
+import TimeCardStats from "./components/TimeCardStats";
+import GithubActivity from "./components/GithubActivity";
+import LiveComments from "./components/LiveComments";
+import MemeOfTheDay from "./components/MemeOfTheDay";
 
 function App() {
   return (
@@ -17,31 +21,17 @@ function App() {
       </header>
 
       {/* Main Content Area */}
-      <main className="p-6 flex flex-col gap-6">
+      <main className="p-6 flex flex-col gap-6 flex-grow h-[calc(100vh-64px)]">
         {/* Stats Cards */}
-        <div className="flex gap-6">
-          <Card title="Statistics" className="flex-1">
-            <div className="text-3xl font-bold">1,234</div>
-          </Card>
-
-          <Card title="Revenue" className="flex-1">
-            <div className="text-3xl font-bold">$5,678</div>
-          </Card>
+        <div className="flex gap-6 h-1/4">
+          <TimeCardStats className="flex-1" />
+          <GithubActivity className="flex-1" />
         </div>
 
         {/* Charts Section */}
-        <div className="flex gap-6">
-          <Card title="Analytics Chart" className="flex-1">
-            <div className="h-64 bg-gray-700 rounded"></div>
-          </Card>
-
-          <Card title="Recent Activity" className="w-1/3">
-            <div className="space-y-4">
-              <div className="border-b border-gray-700 pb-2">Activity 1</div>
-              <div className="border-b border-gray-700 pb-2">Activity 2</div>
-              <div className="border-b border-gray-700 pb-2">Activity 3</div>
-            </div>
-          </Card>
+        <div className="flex gap-6 h-3/4">
+          <MemeOfTheDay className="flex-1" />
+          <LiveComments className="w-1/3" />
         </div>
       </main>
     </div>
